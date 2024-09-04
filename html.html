@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Widgets</title>
+  <link rel="stylesheet" href="css.css">
+</head>
+<body>
+  <div class="container">
+    <div class="left-half"></div>
+    <div class="right-half">
+      <div class="widget">
+        <div class="tabs">
+          <button class="tab active" onclick="showTab('about')">About Me</button>
+          <button class="tab" onclick="showTab('experiences')">Experiences</button>
+          <button class="tab" onclick="showTab('recommended')">Recommended</button>
+        </div>
+        <div class="content" id="about">
+          <p>Hi, I'm Jatadhar. I enjoy working on projects related to AI, IoT, and web development.</p>
+        </div>
+        <div class="content" id="experiences" style="display: none;">
+          <p>I have experience with React, Python, and automation testing frameworks like Selenium.</p>
+        </div>
+        <div class="content" id="recommended" style="display: none;">
+          <p>I recommend exploring AI-powered systems and IoT-enabled devices for future innovation.</p>
+        </div>
+      </div>
+
+      <div class="widget gallery-widget">
+        <div class="gallery-header">
+          <h3>Gallery</h3>
+          <button onclick="addImage()">Add Image</button>
+        </div>
+        <div class="gallery" id="gallery"></div>
+      </div>
+    </div>
+  </div>
+  <script src="js.js"></script>
+</body>
+</html>
